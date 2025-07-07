@@ -14,3 +14,6 @@ Ansible configartion 4 types
 when ever you menction the inverntory fine name, remote user in the ansible.cfg file we dont need to provide in the command line 
 
 
+.j2 -> jinjar 2 templet 
+handlers -> when there is some change in the configaration file then we need to restart the service so at that time when ever change in the configartion 
+autometically excution of the handlerss

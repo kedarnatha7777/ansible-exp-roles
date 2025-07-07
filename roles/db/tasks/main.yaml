@@ -9,6 +9,13 @@
     state: started 
     enabled: yes 
 
+- name: ansible mysql dependencies 
+  ansible.builtin.pip:
+    name: 
+      - PyMySQL
+      - cryptography
+    executable: pip3.9
+
 - name : check the password already setup or not 
   community.mysql.mysql_info:
     login_host: "{{ login_host }}"

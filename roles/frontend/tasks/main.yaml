@@ -1,0 +1,19 @@
+- name: install the nginx
+  ansible.builtin.dnf:
+    name: nginx
+    state: latest
+
+- name: enable and start the nginx service 
+  ansible.builtin.service:
+    name: nginx
+    state: started
+    enabled: yes 
+- name: remove the default content 
+  ansible.builtin.file:
+    path: /usr/share/nginx/html
+    state: absent 
+
+- name: create the html directory
+  ansible.builtin.file:
+    path: /usr/share/nginx/html
+    state: present 

@@ -33,11 +33,11 @@
   args:
     chdir: /app
 
-- name: copy the backend  services 
+- name: backend service file need to copy  to remote 
   ansible.builtin.template:
     src: backend.service.j2
     dest: /etc/systemd/system/backend.service
-    remote_src: yes 
+     
 
 - name:  downlode python-mysql  dependencies
   ansible.builtin.pip:

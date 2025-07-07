@@ -20,7 +20,7 @@
 
 - name: downlode and unzip the frontend code 
   ansible.builtin.get_url:
-    src: https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
+    url: https://expense-builds.s3.us-east-1.amazonaws.com/expense-frontend-v2.zip
     dest: /usr/share/nginx/html
 
 - name: tamplate the expense conf file

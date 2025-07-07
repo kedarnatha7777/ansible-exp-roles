@@ -1,0 +1,6 @@
+- name: configure the backend 
+  hosts: backend.78skedar.online
+  become: yes
+  gather_facts: false
+  tasks: 
+    - backend

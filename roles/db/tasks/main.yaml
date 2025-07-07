@@ -1,0 +1,13 @@
+- name: install mysql-server 
+  ansible.builtin.dnf: 
+    name: mysql-server 
+    state: latest
+- name: start and enable the mysqld server 
+  ansible.builtin.service:
+    name: mysqld 
+    state: started 
+    enabled: yes 
+
+- name: setupo the mysql root password 
+  ansible.builtin.command: mysql -h db.78skedar.online -uroot -p{{ mysql_root_password }}
+  

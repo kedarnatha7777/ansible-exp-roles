@@ -1,0 +1,5 @@
+- name: configure the frontend
+  hosts: 78skedar.online
+  become: yes 
+  roles:
+    - frontend

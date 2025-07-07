@@ -1,0 +1,16 @@
+Ansible configartion 4 types 
+    1 . By using the env variable 
+        ANSIBLE_CONFIG 
+        export  ANSIBLE_CONFIG=/tmp/ansible.cfg
+        to unset -> unset ANSIBLE_CONFIG 
+    2 . by adding to the currnet directory 
+        cp /etc/ansible/ansible.cfg ./ansible.cfg 
+    3. by adding to home directory with . which is invisible file 
+        cp /etc/ansible/ansible.cfg ~/.ansible.cfg 
+    4 .  by defaulty in the ansible cfg 
+        /et/ansible/ansible.cfg 
+    # best recomendation is leep the cfg file in the home directory ~ 
+
+when ever you menction the inverntory fine name, remote user in the ansible.cfg file we dont need to provide in the command line 
+
+
